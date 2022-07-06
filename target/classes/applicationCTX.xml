@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="cal" class="com.haeun.test.Calculator"></bean>
+	
+	<bean id="myCal" class="com.haeun.test.MyCalculator">
+		<property name="num1" value="20"></property>
+		<property name="num2" value="10"></property>
+		<property name="cal">
+			<ref bean="cal" /><!-- Calculator로 만든 객체를 초기화 시키겠다 -->
+		</property>
+	</bean>
+	<bean id="myCal2" class="com.haeun.test.MyCalculator">
+		<property name="num1" value="100"></property>
+		<property name="num2" value="10"></property>
+		<property name="cal">
+			<ref bean="cal" /><!-- Calculator로 만든 객체를 초기화 시키겠다 -->
+		</property>
+	</bean>
+
+</beans>
