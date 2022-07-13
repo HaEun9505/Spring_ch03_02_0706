@@ -1,11 +1,11 @@
 package com.haeun.test;
 
-public class MyCalculator {
+//Calculator 클래스에 의존
+public class MyCalculator {	
 	private int num1;
 	private int num2;
 	
-	
-	Calculator cal;//의존 설정(멤버객체에 의존)
+	Calculator cal;	//의존 설정(멤버객체에 의존)
 	
 	public void add() {
 		cal.add(num1, num2);

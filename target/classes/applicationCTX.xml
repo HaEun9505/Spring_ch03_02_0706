@@ -3,7 +3,7 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 	<!-- Calculator 클래스 Bean에 등록 -->
-	<bean id="cal" class="com.haeun.test.Calculator"></bean>
+	<bean id="cal" class="com.haeun.test.Calculator"></bean><!-- 속성이 없음(멤버변수 X) -->
 	<!-- MyCalculator 클래스 Bean에 등록 -->
 	<bean id="myCal" class="com.haeun.test.MyCalculator">
 		<property name="num1" value="20"></property>
@@ -21,3 +21,4 @@
 	</bean>
 
 </beans>
+

@@ -24,8 +24,9 @@ public class MainClass {
       
       
       String config = "classpath:applicationCTX.xml";
+      //Container 파일 불러오기
       AbstractApplicationContext ctx = new GenericXmlApplicationContext(config);   // 객체 생성
-      MyCalculator cal1 = ctx.getBean("myCal2", MyCalculator.class);
+      MyCalculator cal1 = ctx.getBean("myCal2", MyCalculator.class);	//bean 조회(객체 얻어오기)
       
       cal1.add();
       cal1.sub();
