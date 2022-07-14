@@ -1,11 +1,11 @@
 package com.haeun.test;
 
-//Calculator Å¬·¡½º¿¡ ÀÇÁ¸
+//Calculator í´ë˜ìŠ¤ì— ì˜ì¡´
 public class MyCalculator {	
 	private int num1;
 	private int num2;
 	
-	Calculator cal;	//ÀÇÁ¸ ¼³Á¤(¸â¹ö°´Ã¼¿¡ ÀÇÁ¸)
+	Calculator cal;	//ì˜ì¡´ ì„¤ì •(ë©¤ë²„ê°ì²´ì— ì˜ì¡´)
 	
 	public void add() {
 		cal.add(num1, num2);

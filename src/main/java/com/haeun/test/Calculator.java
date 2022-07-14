@@ -2,24 +2,24 @@ package com.haeun.test;
 
 public class Calculator {
 	
-	public void add(int num1, int num2) {	//ÆÄ¶ó¹ÌÅÍ °ªÀ¸·Î È£Ãâ
+	public void add(int num1, int num2) {	//íŒŒë¼ë¯¸í„° ê°’ìœ¼ë¡œ í˜¸ì¶œ
 		int result = num1 + num2;
-		System.out.println("µÎ ¼öÀÇ ÇÕ: " + result);
+		System.out.println("ë‘ ìˆ˜ì˜ í•©: " + result);
 	}
 	
 	public void sub(int num1, int num2) {
 		int result = num1 - num2;
-		System.out.println("µÎ ¼öÀÇ Â÷: " + result);
+		System.out.println("ë‘ ìˆ˜ì˜ ì°¨: " + result);
 	}
 	
 	public void mul(int num1, int num2) {
 		int result = num1 * num2;
-		System.out.println("µÎ ¼öÀÇ °ö: " + result);
+		System.out.println("ë‘ ìˆ˜ì˜ ê³±: " + result);
 	}
 	
 	public void div(int num1, int num2) {
 		int result = num1 / num2;
-		System.out.println("µÎ ¼ö ³ª´©±â: " + result);
+		System.out.println("ë‘ ìˆ˜ ë‚˜ëˆ„ê¸°: " + result);
 	}
 	
 }

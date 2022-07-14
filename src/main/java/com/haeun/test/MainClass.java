@@ -9,12 +9,12 @@ public class MainClass {
    public static void main(String[] args) {
       // TODO Auto-generated method stub
 
-//      MyCalculator myCal = new MyCalculator(); // ¼±¾ğ
+//      MyCalculator myCal = new MyCalculator(); // ì„ ì–¸
 //      
 //      myCal.setNum1(20);
 //      myCal.setNum2(10);
 //            
-//      myCal.setCal(new Calculator());	// ÃÊ±âÈ­
+//      myCal.setCal(new Calculator());	// ì´ˆê¸°í™”
 //      
 //      
 //      myCal.add();
@@ -24,16 +24,16 @@ public class MainClass {
       
       
       String config = "classpath:applicationCTX.xml";
-      //Container ÆÄÀÏ ºÒ·¯¿À±â
-      AbstractApplicationContext ctx = new GenericXmlApplicationContext(config);   // °´Ã¼ »ı¼º
-      MyCalculator cal1 = ctx.getBean("myCal2", MyCalculator.class);	//bean Á¶È¸(°´Ã¼ ¾ò¾î¿À±â)
+      //Container íŒŒì¼ ë¶ˆëŸ¬ì˜¤ê¸°
+      AbstractApplicationContext ctx = new GenericXmlApplicationContext(config);   // ê°ì²´ ìƒì„±
+      MyCalculator cal1 = ctx.getBean("myCal2", MyCalculator.class);	//bean ì¡°íšŒ(ê°ì²´ ì–»ì–´ì˜¤ê¸°)
       
       cal1.add();
       cal1.sub();
       cal1.mul();
       cal1.div();
       
-      ctx.close(); // »ç¿ë ÈÄ ´İ¾ÆÁà¾ßÇÔ
+      ctx.close(); // ì‚¬ìš© í›„ ë‹«ì•„ì¤˜ì•¼í•¨
    }
 
 }
